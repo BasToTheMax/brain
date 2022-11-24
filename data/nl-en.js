@@ -5,7 +5,9 @@ const data = [
   { input: 'Hallo', output: 'Hello' }, { input: 'Hallo.', output: 'Hello.' }, { input: 'Hallo!', output: 'Hello!' }, { input: 'Hallo?', output: 'Hello?' },
 
   { input: 'Hoe gaat het', output: 'How are you' }, { input: 'Hoe gaat het.', output: 'How are you.' }, { input: 'Hoe gaat het!', output: 'How are you!' }, { input: 'Hoe gaat het?', output: 'How are you?' },
-  { input: 'Hoe gaat het', output: 'How are you doing' }, { input: 'Hoe gaat het.', output: 'How are you doing.' }, { input: 'Hoe gaat het!', output: 'How are you doing!' }, { input: 'Hoe gaat het?', output: 'How are you doing?' }
+  { input: 'Hoe gaat het', output: 'How are you doing' }, { input: 'Hoe gaat het.', output: 'How are you doing.' }, { input: 'Hoe gaat het!', output: 'How are you doing!' }, { input: 'Hoe gaat het?', output: 'How are you doing?' },
+  
+  { input: 'Met mij gaat het goed', output: 'I am doing fine' }, { input: 'Met mij gaat het goed.', output: 'I am doing fine.' }, { input: 'Met mij gaat het goed!', output: 'I am doing fine!' }, { input: 'Met mij gaat het goed?', output: 'I am doing fine?' }
 ];
 
 module.exports = data;
