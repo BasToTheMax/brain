@@ -23,7 +23,7 @@ switch (lang) {
 const config = {
   iterations: 15000,
   log: true,
-  logPeriod: 25,
+  logPeriod: 250,
   layers: [10],
 };
 
