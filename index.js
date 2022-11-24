@@ -28,7 +28,7 @@ for (let i=0; i<l; i++) {
   
   var output = net.run( sentences[i] );
   
-  out += `${output}`;
+  out += `${output} `;
 }
 
 console.log(`Input: ${text}`);
