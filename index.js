@@ -27,7 +27,7 @@ for (let i=0; i<l; i++) {
   console.log(`Translating ${sentences[i]}...`);
   var output = net.run( sentences[i] );
   
-  out += `${output} -\n`;
+  out += `${output}`;
 }
 
 console.log(`Input: ${text}`);
