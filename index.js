@@ -15,7 +15,8 @@ var out;
 out = '';
 
 
-const json = fs.readFileSync(`./trained/${lang}.json`, 'utf-8');
+var json = fs.readFileSync(`./trained/${lang}.json`, 'utf-8');
+json = JSON.parse(json);
 
 const net = new brain.recurrent.LSTM();
 net.fromJSON(json);
