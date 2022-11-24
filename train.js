@@ -5,7 +5,7 @@ const fs = require('fs');
 const config = {
   iterations: 15000,
   log: true,
-  logPeriod: 500,
+  logPeriod: 1,
   layers: [10],
 };
 
