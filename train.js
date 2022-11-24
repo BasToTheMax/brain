@@ -4,16 +4,18 @@ const fs = require('fs');
 const myArgs = process.argv.slice(2);
 console.log('myArgs: ', myArgs);
 
-if (!myArgs[0]) {
+const lang = myArgs[0];
+
+if (!lang) {
   console.log('no lang given');
   process.exit();
 }
 
-switch (myArgs[0]) {
+switch (lang) {
   case "nl-en":
     break;
   default:
-     console.log('invalid lang given');
+    console.log('invalid lang given');
     process.exit();
 }
 
@@ -33,4 +35,4 @@ network.train(data, config);
 
 const json = network.toJSON();
 console.log(typeof json);
-fs.writeFileSync('train.json', String(json));
+fs.writeFileSync(`./trained/${lang}.json`, String(json));
