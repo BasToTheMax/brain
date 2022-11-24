@@ -7,10 +7,10 @@ const json = fs.readFileSync('train.json', 'utf-8');
 const net = new brain.recurrent.LSTM();
 net.fromJSON(json);
 
-
 const myArgs = process.argv.slice(2);
-console.log('myArgs: ', myArgs);
-const text = myArgs.join(' ');
+const lang = myArgs[0];
+console.log('using ' + lang);
+const text = myArgs.slice(1).join(' ');
 
 var sentences = tokenizer.sentences(text, {});
 
