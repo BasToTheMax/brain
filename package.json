@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "brain.js": "^2.0.0-beta.17"
+    "brain.js": "^2.0.0-beta.17",
+    "gpu.js": "^2.16.0",
+    "sbd": "^1.0.19"
   }
 }
