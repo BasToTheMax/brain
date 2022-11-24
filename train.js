@@ -35,4 +35,4 @@ network.train(data, config);
 
 const json = network.toJSON();
 console.log(typeof json);
-fs.writeFileSync(`./trained/${lang}.json`, String(json));
+fs.writeFileSync(`./trained/${lang}.json`, JSON.stringify(json));
