@@ -11,6 +11,8 @@ var sentences = tokenizer.sentences(text, {});
 
 var l = sentences.length;
 
+console.log(l, sentences);
+
 var out;
 out = '';
 
@@ -22,9 +24,10 @@ const net = new brain.recurrent.LSTM();
 net.fromJSON(json);
 
 for (let i=0; i<l; i++) {
+  console.log(`Translating ${sentences[i]}...`);
   var output = net.run( sentences[i] );
   
-  out += `${output}\n`;
+  out += `${output} -\n`;
 }
 
 console.log(`Input: ${text}`);
